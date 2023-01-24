@@ -265,6 +265,8 @@ _Exemplo_
 </p>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag11">2. Sufixos</h4>
 
 O bootstrap possibilita a criação de layouts responsivos, ou seja, que mudam de acordo com o dispositivo. Isto torna os sites mais adaptativos, criando exibições independente do tamanho da tela.
