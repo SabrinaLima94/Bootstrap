@@ -32,6 +32,10 @@
 
 4. <a href="#cores-background">Cores & Backgrounds</a><br>
 
+   1. <a href="#tag19">Classes para formatação de texto</a><br>
+   2. <a href="#tag20">Formatação de links</a><br>
+   3. <a href="#tag21">Backgrounds</a><br>
+
 5. <a href="#margin-padding">Margin & Padding</a><br>
 
 6. <a href="#tamanhos-bordas">Tamanhos e bordas</a><br>
@@ -413,3 +417,75 @@ _Exemplo_
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="cores-background" align="center">Cores & Backgrounds</h2>
+
+<h4 id="tag19">1. Classes para formatação de texto</h4>
+
+`class="text-primary"`<br>
+
+`class="text-secondary"`<br>
+
+`class="text-success"`<br>
+
+`class="text-info"`<br>
+
+`class="text-warning"`<br>
+
+`class="text-danger"`<br>
+
+`class="text-light"`<br>
+
+`class="text-dark"`<br>
+
+`class="text-white"`<br>
+
+`class="text-black-50"` - aplicada opacidade de 50% sobre a cor padrão;<br>
+
+`class="text-white-50"` - recebe opacidade sobre a cor branca. Pode ser usado para formatar textos que ficam sobre imagens.
+
+<h4 id="tag20">2. Formatação de links</h4>
+
+- São utilizadas as mesmas classes da formatação de texto.
+
+_Exemplo_
+
+```html
+<a href="#" class="text-primary">Link primary</a><br />
+
+<a href="#" class="text-secondary">Link secondary</a><br />
+
+<a href="#" class="text-success">Link success</a><br />
+```
+
+<h4 id="tag21">3. Backgrounds</h4>
+
+- Ao invés de `text`, utiliza-se `bg` nas mesmas classes anteriores.
+
+_Exemplo_
+
+`class="bg-primary"`<br>
+
+`class="bg-secondary"`<br>
+
+`class="bg-success"`<br>
+
+`class="bg-info"`<br>
+
+`class="bg-warning"`<br>
+
+`class="bg-danger"`<br>
+
+`class="bg-light"`<br>
+
+`class="bg-dark"`<br>
+
+`class="bg-white"`<br>
+
+`class="bg-transparent"`
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="margin-padding" align="center">Cores & Backgrounds</h2>
+
+<h4 id="tag22">1. Margin</h4>
