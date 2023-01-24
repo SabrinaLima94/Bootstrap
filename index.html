@@ -14,6 +14,17 @@
     <title>Bootstrap</title>
   </head>
   <body style="margin-bottom: 200px; padding: 16px">
+    <h2>Índice:</h2>
+    <ul>
+      <li><a href="#formatacao-texto">Formatação de textos</a></li>
+      <li><a href="#alinhamento-texto">Alinhamento de textos</a></li>
+    </ul>
+
+    <h1 id="formatacao-texto">Formatação de textos</h1>
+    <br />
+    <hr />
+    <br />
+
     <!-- Cabeçalho -->
 
     <h1>Cabeçalho 1</h1>
@@ -145,6 +156,71 @@
       <li class="list-inline-item">Item 2</li>
       <li class="list-inline-item">Item 3</li>
     </ul>
+
+    <br />
+    <h1 id="alinhamento-texto">Alinhamento de textos</h1>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Parágrafo justificado -->
+    <p class="text-justify">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor,
+      dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor
+      risus magna vel lorem. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla
+      tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero,
+      suscipit porttitor risus magna vel lorem.
+    </p>
+
+    <br />
+    <br />
+
+    <!-- 
+          Alinhamento responsivo - text-<tela>-<alinhamento>
+              tela: sm, md, lg, xl
+              alinhamento: left, center, right
+       -->
+    <p class="text-sm-right">tela &gt;= 576px</p>
+    <!--Small-->
+    <p class="text-md-right">tela &gt;= 768px</p>
+    <!--Medium-->
+    <p class="text-lg-right">tela &gt;= 992px</p>
+    <!--Large-->
+    <p class="text-xl-right">tela &gt;= 1200px</p>
+    <!--Extra Large-->
+
+    <br />
+    <br />
+
+    <!-- Elemento Block para inline -->
+    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+    <p class="bg-success d-inline">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <br />
+    <br />
+
+    <!-- Elemento Inline para Block -->
+    <span class="bg-success d-block">Lorem ipsum dolor 1</span>
+    <br />
+    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
+
+    <br />
+    <br />
+
+    <!-- Elemento Inline-Block -->
+    <div class="bg-warning">
+      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+      <h3
+        class="bg-success d-inline-block"
+        style="margin-top: 50px; width: 400px"
+      >
+        Lorem ipsum dolor
+      </h3>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

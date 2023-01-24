@@ -2,7 +2,7 @@
 <h2 align="center">Bootstrap & Design responsivo </h2>
 
 <div align="center">
-<img src="./img/capa.png" width="20%"></div>
+<img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="20%"></div>
 
 <h3 id="indice-menu">Índice</h3>
 
@@ -16,6 +16,12 @@
    6. <a href="#tag6">Alinhamentos</a><br> 7.<a href="#tag7">Bloco de citação</a><br> 8.<a href="#tag8">Truncate</a><br> 9.<a href="#tag9">Listas</a><br>
 
 2. <a href="#alinhamento">Alinhamento de textos</a><br>
+
+   1. <a href="#tag10">Texto justificado</a><br>
+   2. <a href="#tag11">Sufixos</a><br>
+   3. <a href="#tag12">Convertendo elementos block para inline</a><br>
+   4. <a href="#tag13">Convertendo elementos block para inline</a><br>
+   5. <a href="#tag14">Elementos Inline-Block</a><br>
 
 3. <a href="#elementos-flutuantes">Elementos flutuantes</a><br>
 
@@ -57,7 +63,7 @@
 
 <h4 id="tag1">1. Display classes</h4>
 
-Possibilita destaque maior aos títulos onde é aplicado
+- Possibilita destaque maior aos títulos onde é aplicado
 
 _Exemplo:_
 
@@ -72,7 +78,7 @@ _Exemplo:_
 
 <h4 id="tag2">2. Parágrafo</h4>
 
-Destaca o parágrafo alterando sua formatação original
+- Destaca o parágrafo alterando sua formatação original
 
 _Exemplo_
 
@@ -86,8 +92,8 @@ _Exemplo_
 
 <h4 id="tag3">3. Parágrafo Monospace</h4>
 
-É um padrão de letras que era utilizado em máquina de escrever.
-Deixa os caracteres com a mesma largura.
+- É um padrão de letras que era utilizado em máquina de escrever.
+  Deixa os caracteres com a mesma largura.
 
 _Exemplo_
 
@@ -101,19 +107,19 @@ _Exemplo_
 
 <h4 id="tag4">4. Classes de estilo</h4>
 
-a) Texto em negrito
+- Texto em negrito
 
 ```html
 <p class="font-weight-bold">Texto Negrito</p>
 ```
 
-b) Texto normal
+- Texto normal
 
 ```html
 <p class="font-weight-normal">Texto Normal</p>
 ```
 
-c) Texto itálico
+- Texto itálico
 
 ```html
 <p class="font-italic">Texto Itálico</p>
@@ -123,19 +129,19 @@ c) Texto itálico
 
 <h4 id="tag5">5. Transformação de textos</h4>
 
-a) Letras maiúsculas
+- Letras maiúsculas
 
 ```html
 <p class="text-uppercase">letras maiúculas</p>
 ```
 
-b) Letras minúsculas
+- Letras minúsculas
 
 ```html
 <p class="text-lowercase">LETRAS MINÚSCULAS</p>
 ```
 
-c) Primeira letra maiúscula
+- Primeira letra maiúscula
 
 ```html
 <p class="text-capitalize">primeira letra maiúscula</p>
@@ -145,19 +151,19 @@ c) Primeira letra maiúscula
 
 <h4 id="tag6">6. Alinhamentos</h4>
 
-a) À direita
+- À direita
 
 ```html
 <p class="text-right">Direita</p>
 ```
 
-b) À esquerda
+- À esquerda
 
 ```html
 <p class="text-left">Esquerda</p>
 ```
 
-c) Centralizado
+- Centralizado
 
 ```html
 <p class="text-center">Centralizado</p>
@@ -167,7 +173,7 @@ c) Centralizado
 
 <h4 id="tag7">7. Bloco de citação</h4>
 
-A tag `blockquote` cria um bloco de citação, podendo ser aplicado juntamente a `class` com o mesmo nome.
+- A tag `blockquote` cria um bloco de citação, podendo ser aplicado juntamente a `class` com o mesmo nome.
 
 _Exemplo_
 
@@ -177,9 +183,9 @@ _Exemplo_
 </blockquote>
 ```
 
-É possível também utilizar a class ´blockquote-footer´, que dá uma formatação ao bloco no rodapé.
+- É possível também utilizar a class ´blockquote-footer´, que dá uma formatação ao bloco no rodapé.
 
-A tag `cite` possibilita indicar um autor
+- A tag `cite` possibilita indicar um autor
 
 _Exemplo_
 
@@ -199,7 +205,7 @@ _Exemplo_
 
 <h4 id="tag8">8. Truncate</h4>
 
-É utilizada para "truncar" ou cortar partes do texto. Quando aplicado, por exemplo, em um parágrafo, ao expandir a tela o texto irá aparecer mais e, ao passar o cursor em cima, aparecerá o texto completo _(este recurso está disponível apenas para Safari)_.
+- É utilizada para "truncar" ou cortar partes do texto. Quando aplicado, por exemplo, em um parágrafo, ao expandir a tela o texto irá aparecer mais e, ao passar o cursor em cima, aparecerá o texto completo _(este recurso está disponível apenas para Safari)_.
 
 _Exemplo_
 
@@ -213,7 +219,7 @@ _Exemplo_
 
 <h4 id="tag9">9. Listas</h4>
 
-a) Listas sem estilo
+- Listas sem estilo
 
 _Exemplo_
 
@@ -225,7 +231,7 @@ _Exemplo_
 </ul>
 ```
 
-b) Listas inline (na mesma linha)
+- Listas inline (na mesma linha)
 
 _Exemplo_
 
@@ -238,5 +244,97 @@ _Exemplo_
 ```
 
 _Obs: Deve ser aplicado em todos os elementos dentro da lista_
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="alinhamento" align="center">Alinhamento de textos</h2>
+
+<h4 id="tag10">1. Texto justificado</h4>
+
+_Exemplo_
+
+```html
+<p class="text-justify">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum
+  elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper
+  aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel
+  lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+  vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui
+  eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus
+  magna vel lorem.
+</p>
+```
+
+<h4 id="tag11">2. Sufixos</h4>
+
+O bootstrap possibilita a criação de layouts responsivos, ou seja, que mudam de acordo com o dispositivo. Isto torna os sites mais adaptativos, criando exibições independente do tamanho da tela.
+
+Existem sufixos que utilizamos para criar estas diferente exibições para cada dispositivo, são eles:
+
+**a)** SM: Small - para dispositivos >= 576px;<br>
+**b)** MD: Medium - para dispositivos >= 768px;<br>
+**c)** LG: Large - para dispositivos >= 992px;<br>
+**d)** XL: Extra Large - para dispositivos >= 1200px;<br>
+
+Portanto, é possível definir alinhamentos específicos para diferentes tipos de tela.
+
+_Exemplo de aplicação_
+
+```html
+<p class="text-sm-right">tela &gt;= 576px</p>
+<!--Small-->
+
+<p class="text-md-right">tela &gt;= 768px</p>
+<!--Medium-->
+
+<p class="text-lg-right">tela &gt;= 992px</p>
+<!--Large-->
+
+<p class="text-xl-right">tela &gt;= 1200px</p>
+<!--Extra Large-->
+```
+
+- Para utilização deve ser aplicado: `"text-sufixoDaTela-alinhamento"`
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag12">3. Convertendo elementos block para inline</h4>
+
+- A `class="d-inline"`transforma o elemento block em inline
+
+_Exemplo:_
+
+```html
+<h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+
+<p class="bg-success d-inline">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+```
+
+_Obs: A tag `bg-success` e `bg-warning` aplicam um background na cor verde e amarelo respectivamente (foi utilizado apenas para demonstrar o comportamento dos elementos block e inline)_
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag13">4. Convertendo elementos online para block</h4>
+
+- A `class="d-blok"`transforma o elemento inline em block
+
+_Exemplo:_
+
+```html
+<span class="bg-success d-block">Lorem ipsum dolor 1</span>
+
+<span class="bg-success d-block">Lorem ipsum dolor 2</span>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag14">5. Elementos Inline-Block</h4>
+
+- A `class="d-inline-block"`torna o elemento híbrido.
+- O elemento `inline` não permite aplicação de margin e padding superior, nem definir largura;
+- O elemento `block` permite a aplicação de margin, padding superior e definir largura;
+- O `inline-block` permite atribuição de margin superior, padding e largura (como block), porém também permite manter os elementos na mesma linha (como inline).
 
 <a href="#indice-menu">Voltar ao índice</a>
