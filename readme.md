@@ -25,6 +25,11 @@
 
 3. <a href="#elementos-flutuantes">Elementos flutuantes</a><br>
 
+   1. <a href="#tag15">Float-left e Float-right</a><br>
+   2. <a href="#tag16">Posicionamento fixo</a><br>
+   3. <a href="#tag17">Float responsivo</a><br>
+   4. <a href="#tag18">Sticky</a><br>
+
 4. <a href="#cores-background">Cores & Backgrounds</a><br>
 
 5. <a href="#margin-padding">Margin & Padding</a><br>
@@ -265,8 +270,6 @@ _Exemplo_
 </p>
 ```
 
-<a href="#indice-menu">Voltar ao índice</a>
-
 <h4 id="tag11">2. Sufixos</h4>
 
 O bootstrap possibilita a criação de layouts responsivos, ou seja, que mudam de acordo com o dispositivo. Isto torna os sites mais adaptativos, criando exibições independente do tamanho da tela.
@@ -338,5 +341,75 @@ _Exemplo:_
 - O elemento `inline` não permite aplicação de margin e padding superior, nem definir largura;
 - O elemento `block` permite a aplicação de margin, padding superior e definir largura;
 - O `inline-block` permite atribuição de margin superior, padding e largura (como block), porém também permite manter os elementos na mesma linha (como inline).
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="elementos-flutuantes" align="center">Elementos flutuantes</h2>
+
+<h4 id="tag15">1. Float-left e Float-right</h4>
+
+_Exemplo_
+
+```html
+<div class="bg-success float-left">Float Left</div>
+
+<div class="bg-warning float-right">Float Right</div>
+
+<div class="float-none">Float None</div>
+```
+
+- A div com os elementos flutuantes não possui altura, e para corrigir utilizamos o `"clear: both"`;
+- No bootstrap pode ser aplicado no "elemento pai" (parent, que abriga a div flutuante) a `class="clearfix"`
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag16">2. Posicionamento fixo</h4>
+
+- É possível fixar um texto no início da página (`class="fixed-top"`) ou final (`class="fixed-bottom"`).
+
+_Exemplo_
+
+```html
+<h1 class="bg-success fixed-bottom">Título do conteúdo fixo</h1>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag17">3. Float responsivo</h4>
+
+- Podemos flutuar objetos para diferentes tamanhos de tela com `class="float-tamanhoDaTela-direcao"`;
+- Só é possível utilizar o `float-left`ou `float-right` neste caso.
+
+_Exemplo_
+
+```html
+<div class="float-sm-right">tela &gt;= 576px *</div>
+<!--Small-->
+
+<div class="float-md-right">tela &gt;= 768px *</div>
+<!--Medium-->
+
+<div class="float-lg-right">tela &gt;= 992px *</div>
+<!--Large-->
+
+<div class="float-xl-right">tela &gt;= 1200px *</div>
+<!--Extra Large-->
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag18">4. Sticky</h4>
+
+- A `class="sticky-top"` "gruda" uma lista no topo da página quando ela atinge o limite superior.
+
+_Exemplo_
+
+```html
+<ul class="list-inline bg-warning sticky-top">
+  <li class="list-inline-item">Item 1</li>
+  <li class="list-inline-item">Item 2</li>
+  <li class="list-inline-item">Item 3</li>
+</ul>
+```
 
 <a href="#indice-menu">Voltar ao índice</a>
