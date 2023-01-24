@@ -48,11 +48,12 @@
    3. <a href="#tag26">Bordas</a><br>
    4. <a href="#tag27">Border radius</a><br>
 
-7. <a href="#media-queries">Media queries</a><br>
-
+7. <a href="#media-queries1">Media queries (Parte 1)</a><br>
    1. <a href="#tag28">Tipos de mídias</a><br>
    2. <a href="#tag29">Exemplos de resoluções de telas</a><br>
    3. <a href="#tag30">Link de media queries no Bootstrap</a><br>
+
+7.1 <a href="#media-queries2">Media queries (Parte 2)</a><br>
 
 8. <a href="#botoes">Botões</a><br>
 
@@ -650,7 +651,7 @@ _Exemplos_
 
 <a href="#indice-menu">Voltar ao índice</a>
 
-<h2 id="media-queries" align="center">Media Queries</h2>
+<h2 id="media-queries1" align="center">Media Queries (Parte 1)</h2>
 
 <h4 id="tag28">1. Tipos de mídias </h4>
 
@@ -707,5 +708,16 @@ _Exemplos de utilização media queries:_
 ```html
 @media (min-width: 576px) { ... }
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="media-queries2" align="center">Media Queries (Parte 2)</h2>
+
+_(Arquivo ../media-queries/index.html)_
+
+- `Breakpoints` (pontos de quebra ou pontos de interrupção): definições de largura mínimas para exibição do site;
+- É possível alterar o layout para cada tipo de dispositivo através dos breakpoints;
+- No link do bootstrap (<a href= "https://getbootstrap.com/docs/4.1/layout/overview/">Media Queries - Bootstrap</a>) há os valores padronizados para width de acordo com cada tipo de dispositivo;
+- São combinados valores de max e min width para definir intervalos de tamanhos de dispositivos.
 
 <a href="#indice-menu">Voltar ao índice</a>
