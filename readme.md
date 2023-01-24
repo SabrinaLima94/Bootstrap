@@ -50,6 +50,10 @@
 
 7. <a href="#media-queries">Media queries</a><br>
 
+   1. <a href="#tag28">Tipos de mídias</a><br>
+   2. <a href="#tag29">Exemplos de resoluções de telas</a><br>
+   3. <a href="#tag30">Link de media queries no Bootstrap</a><br>
+
 8. <a href="#botoes">Botões</a><br>
 
 9. <a href="#barra-nav">Barra de navegação</a><br>
@@ -642,6 +646,66 @@ _Exemplos_
 <div class="border rounded-left">rounded left</div>
 
 <div class="bg-light mb-2 p-5 border w-25 rounded-circle">rounded circle</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="media-queries" align="center">Media Queries</h2>
+
+<h4 id="tag28">1. Tipos de mídias </h4>
+
+all – todos os dispositivos
+
+aural – sintetizadores de voz
+
+braille – leitores de Braille
+
+embossed – impressoras de Braille
+
+handheld – dispositivos de mão. Por exemplo: celulares com telas pequenas.
+
+print – impressoras convencionais
+
+projection – apresentações de slides
+
+screen – monitores coloridas
+
+tty – teleimpressores e terminais
+
+tv – televisores
+
+_Exemplo de utilização:_
+
+```html
+<link rel="stylesheet" media="print" href="print.css" />
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag29">2. Exemplos de resoluções de telas </h4>
+
+320 pixels – Smartphones no modo retrato.
+
+480 pixels – Smartphones no modo paisagem.
+
+600 pixels – Tablets pequenos. Ex: Amazon Kindle (600×800)
+
+768 pixels – Tablets maiores em modo retrato. Ex: iPad (768×1024)
+
+1024 pixels – Tablets maiores em modo paisagem, monitores antigos.
+
+1200 pixels – Monitores wide.
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag30">3. Link de media queries no Bootstrap </h4>
+
+- <a href= "https://getbootstrap.com/docs/4.1/layout/overview/">Media Queries - Bootstrap</a>
+
+_Exemplos de utilização media queries:_
+
+```html
+@media (min-width: 576px) { ... }
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
