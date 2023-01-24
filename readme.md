@@ -493,7 +493,7 @@ _Exemplo_
 
 <a href="#indice-menu">Voltar ao índice</a>
 
-<h2 id="margin-padding" align="center">Cores & Backgrounds</h2>
+<h2 id="margin-padding" align="center">Margin & Padding</h2>
 
 <h4 id="tag22">1. Margin</h4>
 
