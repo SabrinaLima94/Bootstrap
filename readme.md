@@ -444,6 +444,8 @@ _Exemplo_
 
 `class="text-white-50"` - recebe opacidade sobre a cor branca. Pode ser usado para formatar textos que ficam sobre imagens.
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag20">2. Formatação de links</h4>
 
 - São utilizadas as mesmas classes da formatação de texto.
@@ -457,6 +459,8 @@ _Exemplo_
 
 <a href="#" class="text-success">Link success</a><br />
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
 
 <h4 id="tag21">3. Backgrounds</h4>
 
