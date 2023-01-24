@@ -38,6 +38,9 @@
 
 5. <a href="#margin-padding">Margin & Padding</a><br>
 
+   1. <a href="#tag22">Margin</a><br>
+   2. <a href="#tag23">Padding</a><br>
+
 6. <a href="#tamanhos-bordas">Tamanhos e bordas</a><br>
 
 7. <a href="#media-queries">Media queries</a><br>
@@ -493,3 +496,42 @@ _Exemplo_
 <h2 id="margin-padding" align="center">Cores & Backgrounds</h2>
 
 <h4 id="tag22">1. Margin</h4>
+
+- O valor pode ser definido de 0 a 5, sendo uma unidade de medida do CSS (REM).
+- As abreviações para aplicação são:
+
+  - mt -> Margin Top
+  - mb -> Margin Bottom
+  - ml -> Margin Left
+  - mr -> Margin Right
+  - mx -> Margin no eixo x (horizontal) esquerda/direita
+  - my -> Margin no eixo y (vertical) top/bottom
+  - m -> Margin em todos os lados
+
+_Exemplo_
+
+```html
+<p class="mt-5">Conteúdo</p>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag23">2. Padding</h4>
+
+- A aplicação é igual ao margin, apenas trocando a letra "m" pela letra "p".
+
+  - pt -> Padding Top
+  - pb -> Padding Bottom
+  - pl -> Padding Left
+  - pr -> Padding Right
+  - px -> Padding no eixo x (horizontal) esquerda/direita
+  - py -> Padding no eixo y (vertical) top/bottom
+  - p -> Padding em todos os lados
+
+_Exemplo_
+
+```html
+<p class="pb-5">Conteúdo</p>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
