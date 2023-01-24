@@ -43,6 +43,11 @@
 
 6. <a href="#tamanhos-bordas">Tamanhos e bordas</a><br>
 
+   1. <a href="#tag24">Classes de largura</a><br>
+   2. <a href="#tag25">Classes de altura</a><br>
+   3. <a href="#tag26">Bordas</a><br>
+   4. <a href="#tag27">Border radius</a><br>
+
 7. <a href="#media-queries">Media queries</a><br>
 
 8. <a href="#botoes">Botões</a><br>
@@ -532,6 +537,111 @@ _Exemplo_
 
 ```html
 <p class="pb-5">Conteúdo</p>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="tamanhos-bordas" align="center">Tamanhos e bordas</h2>
+
+<h4 id="tag24">1. Classes de largura </h4>
+
+- É possível utilizar classes para definir larguras por porcentagens no bootstrap.
+- Utilizar: `w-%`, onde `w= width` e a `% será definida conforme desejar`.
+
+_Exemplo_
+
+```html
+<div class="w-25">width 25%</div>
+
+<div class="w-50">width 50%</div>
+
+<div class="w-75">width 75%</div>
+
+<div class="w-100">width 100%</div>
+
+<div class="w-auto">width auto</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag25">2. Classes de altura </h4>
+
+- É possível também utilizar classes para definir altura por porcentagens no bootstrap.
+- Utilizar: `h-%`, onde `h= height` e a `% será definida conforme desejar`.
+
+_Exemplo_
+
+```html
+<div class="h-25">height 25%</div>
+
+<div class="h-50">height 50%</div>
+
+<div class="h-75">height 75%</div>
+
+<div class="h-100">height 100%</div>
+
+<div class="h-auto">height auto</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag26">3. Bordas </h4>
+
+- É possível aplicação de borda através de uma classe com o bootstrap.
+
+_Atributos:_
+
+border: todas as bordas<br>
+border-top: borda superior<br>
+border-bottom: borda inferior<br>
+border-right: bordar direita<br>
+border-left: borda esquerda<br>
+
+Existe a possibilidade de aplicar cores nas bordas:
+`primary, secondary, success, info, warning, danger, light, dark, white`
+
+_Exemplos_
+
+```html
+<div class="border border-dark">todas as bordas</div>
+
+<div class="border-top border-secondary">borda superior</div>
+
+<div class="border-bottom border-danger">borda inferior</div>
+
+<div class="border-right border-success">borda direita</div>
+
+<div class="border-left border-info">borda esquerda</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag27">4. Border radius </h4>
+
+- Existe a aplicação do border radius através de classes.
+
+_Atributos_
+
+rounded - arredonda todos os lados;
+rounded-top - arredonda o topo;
+rounded-right - arredonda a direita;
+rounded-left - arredonda a esquerda;
+rounded-circle - converte em um círculo.
+
+_Exemplos_
+
+```html
+<div class="border rounded">rounded</div>
+
+<div class="border rounded-top">rounded top</div>
+
+<div class="border rounded-bottom">rounded bottom</div>
+
+<div class="border rounded-right">rounded right</div>
+
+<div class="border rounded-left">rounded left</div>
+
+<div class="bg-light mb-2 p-5 border w-25 rounded-circle">rounded circle</div>
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
