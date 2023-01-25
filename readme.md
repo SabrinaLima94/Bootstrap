@@ -57,6 +57,12 @@
 
 8. <a href="#botoes">Botões</a><br>
 
+   1. <a href="#tag31">Formatações padrão e específicas</a><br>
+   2. <a href="#tag32">Contorno para botões</a><br>
+   3. <a href="#tag33">Tamanhos de botões</a><br>
+   4. <a href="#tag34">Estados dos botões</a><br>
+   5. <a href="#tag35">Grupos de botões</a><br>
+
 9. <a href="#barra-nav">Barra de navegação</a><br>
 
 10. <a href="#listas">Listas</a><br>
@@ -719,5 +725,128 @@ _(Arquivo ../media-queries/index.html)_
 - É possível alterar o layout para cada tipo de dispositivo através dos breakpoints;
 - No link do bootstrap (<a href= "https://getbootstrap.com/docs/4.1/layout/overview/">Media Queries - Bootstrap</a>) há os valores padronizados para width de acordo com cada tipo de dispositivo;
 - São combinados valores de max e min width para definir intervalos de tamanhos de dispositivos.
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="botoes" align="center">Botões</h2>
+
+<h4 id="tag31">1. Formatações padrão e específicas </h4>
+
+| Formatação padrão | Formatação específica                                                                                                       |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `class="btn"`     | `btn-primary`, `btn-secondary`, `btn-success`, `btn-info`, `btn-warning`, `btn-danger`, `btn-light`, `btn-dark`, `btn-link` |
+
+- Para utilizar deve ser aplicado a classe "btn" junto com a classe de formatação específica desejada;
+
+_Exemplo_
+
+```html
+<button class="btn btn-dark" type="button">Exemplo</button>
+```
+
+- É possível aplicar formatações de botões em diferentes tags, como `link`, `button`, `input` (`submit`, `reset`), etc.
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag32">2. Contorno para botões </h4>
+
+- Para inserir contorno deve ser utilizado `class="btn btn-outline-formatação"`.
+
+_Exemplo_
+
+```html
+<button class="btn btn-outline-info" type="button">Exemplo</button>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag33">3. Tamanhos de botões </h4>
+
+Existem 3 tipos de tamanhos para aplicar nos botões: `btn-lg` **(Large)**, `btn-sm` **(Small)**, `btn-block` **(Bloco- ocupa todo o espaçamento)**.
+
+_Exemplo_
+
+```html
+<button class="btn btn-lg" type="button">Grande</button>
+
+<button class="btn btn-sm" type="button">Pequeno</button>
+
+<button class="btn btn-block" type="button">Bloco</button>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag34">4. Estados dos botões </h4>
+
+- Existem 3 tipos de estado para aplicar nos botões: `active`, `disabled` e alternar entre os dois estados (`data-toggle`).
+
+Para o botão ativo:
+
+```html
+<button class="btn btn-success active" type="button">Ativo</button>
+```
+
+Para o botão inativo:
+
+```html
+<button class="btn btn-success disabled" type="button">Ativo</button>
+```
+
+Para o botão que alterna:
+
+```html
+<button class="btn btn-success" type="button" data-toggle="button">
+  Alternar
+</button>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag35">5. Grupos de botões </h4>
+
+Para agrupar os botões na horizontal (`class="btn-group"`):
+
+```html
+
+```
+
+Para agrupar os botões na vertical (`class="btn-group-vertical"`):
+
+```html
+
+```
+
+Para criar uma toolbar (`class="btn-toolbar"`) :
+
+```html
+
+```
+
+Para criar um botão com dropdown:
+
+**1º** - Colocar na `<div>` externa a `class="dropdown-toggle"` e `data-toggle="dropdown"`<br>
+**2º** - Adicionar na `<div>` que está agrupando os links a `class="dropdown-menu"`<br>
+**3º** Adicionar em cada link a `class="dropdown-item"`
+
+_Exemplo 1_
+
+```html
+<div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+    Clique
+  </button>
+
+  <div class="dropdown-menu">
+    <a href="#" class="dropdown-item">Link 1</a>
+
+    <div class="dropdown-divider"></div>
+
+    <a href="#" class="dropdown-item">Link 2</a>
+    <a href="#" class="dropdown-item">Link 3</a>
+  </div>
+</div>
+```
+
+_Observação: a `class="dropdown-divider"`, quando aplicada em uma `<div>` entre os links, cria um divisor entre eles_
 
 <a href="#indice-menu">Voltar ao índice</a>
