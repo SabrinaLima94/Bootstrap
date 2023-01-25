@@ -828,7 +828,7 @@ Para criar um botão com dropdown:
 **2º** - Adicionar na `<div>` que está agrupando os links a `class="dropdown-menu"`<br>
 **3º** Adicionar em cada link a `class="dropdown-item"`
 
-_Exemplo 1_
+_Exemplo_
 
 ```html
 <div class="dropdown">
