@@ -807,19 +807,38 @@ Para o botão que alterna:
 Para agrupar os botões na horizontal (`class="btn-group"`):
 
 ```html
-
+<div class="btn-group">
+  <button class="btn btn-info" type="button">Botão 1</button>
+  <button class="btn btn-info" type="button">Botão 2</button>
+  <button class="btn btn-info" type="button">Botão 3</button>
+</div>
 ```
 
 Para agrupar os botões na vertical (`class="btn-group-vertical"`):
 
 ```html
-
+<div class="btn-group-vertical">
+  <button class="btn btn-danger" type="button">Botão 1</button>
+  <button class="btn btn-danger" type="button">Botão 2</button>
+  <button class="btn btn-danger" type="button">Botão 3</button>
+</div>
 ```
 
 Para criar uma toolbar (`class="btn-toolbar"`) :
 
 ```html
+<div class="btn-toolbar">
+  <div class="btn-group">
+    <button class="btn btn-dark" type="button">1</button>
+    <button class="btn btn-dark" type="button">2</button>
+    <button class="btn btn-dark" type="button">3</button>
+  </div>
 
+  <div class="btn-group">
+    <button class="btn btn-dark" type="button">4</button>
+    <button class="btn btn-dark" type="button">5</button>
+  </div>
+</div>
 ```
 
 Para criar um botão com dropdown:
@@ -828,7 +847,7 @@ Para criar um botão com dropdown:
 **2º** - Adicionar na `<div>` que está agrupando os links a `class="dropdown-menu"`<br>
 **3º** Adicionar em cada link a `class="dropdown-item"`
 
-_Exemplo_
+_Exemplo 1_
 
 ```html
 <div class="dropdown">
