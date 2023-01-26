@@ -65,6 +65,14 @@
 
 9. <a href="#barra-nav">Barra de navegação</a><br>
 
+   1. <a href="#tag36">Navegação simples/abas</a><br>
+   2. <a href="#tag37">Barra de navegação simples</a><br>
+   3. <a href="#tag38">Barra de navegação com menu responsivo</a><br>
+   4. <a href="#tag39">Barra de navegação com formulário</a><br>
+   5. <a href="#tag40">Barra de navegação com menu dropdown</a><br>
+   6. <a href="#tag41">Cores</a><br>
+   7. <a href="#tag42">Alinhamentos</a><br>
+
 10. <a href="#listas">Listas</a><br>
 
 11. <a href="#formularios">Formulários</a><br>
@@ -867,5 +875,232 @@ _Exemplo 1_
 ```
 
 _Observação: a `class="dropdown-divider"`, quando aplicada em uma `<div>` entre os links, cria um divisor entre eles_
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="barra-nav" align="center">Barras de navegação</h2>
+
+- <a href="https://getbootstrap.com/docs/4.1/components/navs/">Documentação oficial sobre Navs </a>
+
+<h4 id="tag36">1. Navegação simples/abas </h4>
+
+- `<ul class="nav">` estabelece que os itens serão exibidos inline;
+- `<li class="nav-item"` define o item que fará parte da navegação;
+- `<a href="" class="nav-link">` insere o link na navegação;
+- `nav-item`e `nav-link` determinam o espaçamento entre os itens;
+- Tipos de navegação: `nav-pills`e `nav-tabs` (navegação por abas);
+
+_Utilização:_
+
+`<ul class="nav nav-pills">`
+
+- `<a href="" class="nav-link active">` utilizada para indicar qual página está ativa no momento;
+- Existem opções para alinhamento (por padrão, fica à esquerda);
+
+_Exemplos_
+
+**justify-content-center:** `<ul class="nav nav-tabs justify-content-center">` que centraliza o menu de navegação;<br>
+**justify-content-end:** `<ul class="nav nav-tabs justify-content-end">`alinha a navegação à direita; <br>
+**flex-column:** `<ul class="nav nav-tabs flex-column">` deixa o menu de navegação em colunas
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag37">2. Barra de navegação simples </h4>
+
+- a `class="navbar"`cria uma barra de navegação
+
+_Aplicação:_
+
+- `<nav class="nav-bar">`
+- `<ul class="navbar-nav">`
+- `<li class="nav-item">`
+- `<a href="" class="nav-link">`
+
+_Apenas aplicando o exemplo acima, a navegação ficará à direita e a logo à esquerda. Para resolver este problema deve utilizar outra class: `<nav class="navbar-expand-sm">`, onde "sm" refere-se ao tamanho da tela (sm, md, lg ou xl).
+Isso irá adequar o espaçamento ao dispositivo indicado._
+
+- `class="navbar-brand"` estabelece que aquele item é a logo da barra de navegação;
+- para utilizar backgrounds na barra de navegação são utilizadas duas classes:
+  - `navbar-dark` (para fundo escuro) ou `navbar-light` (para fundo claro);
+  - é possível aplicação do `bg-dark`, por exemplo, dentro desta class.
+
+_Exemplo de barra de navegação simples:_
+
+```html
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <!--Logo-->
+  <a href="" class="navbar-brand">Logo</a>
+
+  <!--Navegação-->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a href="" class="nav-link">Item 1</a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">Item 2</a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">Item 3</a>
+    </li>
+  </ul>
+</nav>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag38">3. Barra de navegação com menu responsivo </h4>
+
+- É possível criar um menu hamburguer. Um botão que "esconde" o menu de navegação, usado principalmente por dispositivos de telas menores
+
+_Exemplo:_
+
+```html
+<button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+  <span class="navbar-toggler-icon"></span>
+</button>
+```
+
+_Aplicando na `div`:_
+
+```html
+<div class="collapse navbar-collapse" id="navegacao">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a href="" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">Sobre</a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">Serviços</a>
+    </li>
+  </ul>
+</div>
+```
+
+- `data-target`é o item que queremos exibir ou ocultar quando o botão for clicado
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag39">4. Barra de navegação com formulário </h4>
+
+_Exemplo_
+
+```html
+<form class="form-inline">
+  <input type="text" class="form-control" placeholder="Pesquisa..." />
+  <button class="btn btn-outline-success">Ok</button>
+</form>
+```
+
+- Este formulário deve ser colocado dentro da `<nav>`, antes do seu fechamento;
+- Caso seja colocado dentro da `div` do menu hamburguer, o formulário também ficará oculto.
+
+_Exemplo de barra de navegação com formulário:_
+
+```html
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <!--Logo-->
+  <a href="" class="navbar-brand">Logo</a>
+
+  <!--Menu hamburguer-->
+  <button
+    class="navbar-toggler"
+    data-toggle="collapse"
+    data-target="#navegacao2"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!--Navegação-->
+  <div class="collapse navbar-collapse" id="navegacao2">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Serviços</a>
+      </li>
+    </ul>
+
+    <!--Formulario-->
+    <form class="form-inline">
+      <input type="text" class="form-control" placeholder="Pesquisar..." />
+      <button class="btn btn-outline-success">Ok</button>
+    </form>
+  </div>
+</nav>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag40">5. Barra de navegação com menu dropdown </h4>
+
+_Exemplo:_
+
+```html
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <!--Logo-->
+  <a href="" class="navbar-brand">Logo</a>
+
+  <!--Menu hamburguer-->
+  <button
+    class="navbar-toggler"
+    data-toggle="collapse"
+    data-target="#navegacao3"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!--Navegação-->
+  <div class="collapse navbar-collapse" id="navegacao3">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Sobre</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"
+          >Serviços</a
+        >
+
+        <!--Menu dropdown-->
+        <div class="dropdown-menu">
+          <a href="" class="dropdown-item">Serviço 1</a>
+          <a href="" class="dropdown-item">Serviço 2</a>
+          <a href="" class="dropdown-item">Serviço 3</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag41">6. Cores </h4>
+
+- Podem ser aplicadas as mesmas cores que são utilizadas na tag `bg`: `bg-primary`, `bg-secondary`, `bg-success`, `bg-info`, `bg-warning`, `bg-danger`, `bg-light`, `bg-dark`;
+- Para `navbar`: `nav navbar-light` e `nav navbar-dark`
+
+_Exemplo de aplicação:_
+
+```html
+<nav class="navbar navbar-expand-sm navbar-light bg-success"></nav>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag42">7. Alinhamentos </h4>
+
+- `class="navbar fixed-top"` fixa a barra de navegação no topo da página;
+- `class="navbar fixed-bottom"` fixa a barra de navegação no fim da página;
+- `class="navbar sticky-top"` após passar pela barra de navegação, ela é fixada.
 
 <a href="#indice-menu">Voltar ao índice</a>
