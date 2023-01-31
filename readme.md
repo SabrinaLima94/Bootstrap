@@ -75,6 +75,13 @@
 
 10. <a href="#listas">Listas</a><br>
 
+    1. <a href="#tag43">Lista padrão</a><br>
+    2. <a href="#tag44">Lista com classe flush</a><br>
+    3. <a href="#tag45">Lista com links</a><br>
+    4. <a href="#tag46">Listas com classes contextuais</a><br>
+    5. <a href="#tag47">Badges</a><br>
+    6. <a href="#tag48">Breadcrumb</a><br>
+
 11. <a href="#formularios">Formulários</a><br>
 
 12. <a href="#input-group">Input Group</a><br>
@@ -1102,5 +1109,95 @@ _Exemplo de aplicação:_
 - `class="navbar fixed-top"` fixa a barra de navegação no topo da página;
 - `class="navbar fixed-bottom"` fixa a barra de navegação no fim da página;
 - `class="navbar sticky-top"` após passar pela barra de navegação, ela é fixada.
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="listas" align="center">Listas</h2>
+
+<h4 id="tag43">1. Lista padrão </h4>
+
+- Utiliza-se na `ul` a `class="list-group"` e na `li` aplica-se a `class="list-group-item"`;
+- Pode ser aplicado também a class `active`;
+
+_Exemplo:_
+
+```html
+<ul class="list-group">
+  <li class="list-group-item active">Meu item de lista 1</li>
+  <li class="list-group-item">Meu item de lista 2</li>
+  <li class="list-group-item">Meu item de lista 3</li>
+  <li class="list-group-item">Meu item de lista 4</li>
+</ul>
+```
+
+<h4 id="tag44">2. Lista com classe flush </h4>
+
+- A diferença desta lista para a lista padrão é que ela terá apenas bordas superior e inferior, sem existir a borda lateral e arredondamento nos cantos;
+
+```html
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Meu item de lista 1</li>
+  <li class="list-group-item">Meu item de lista 2</li>
+  <li class="list-group-item active">Meu item de lista 3</li>
+  <li class="list-group-item">Meu item de lista 4</li>
+</ul>
+```
+
+<h4 id="tag45">3. Lista com links </h4>
+
+- A mesma classe é aplicadas na tag `<a>`.
+
+_Exemplo:_
+
+```html
+<ul class="list-group">
+  <a class="list-group-item" href="#">Meu item de lista 1</a>
+  <a class="list-group-item active" href="#">Meu item de lista 2</a>
+  <a class="list-group-item" href="#">Meu item de lista 3</a>
+  <a class="list-group-item" href="#">Meu item de lista 4</a>
+</ul>
+```
+
+<h4 id="tag46">4. Listas com classes contextuais </h4>
+
+- Aplica-se a `class="list-group-item-opção`;
+- As opções de classes são as mesmas que já aprendemos anteriormente: primary, secondary, success, info, warning, danger, light e dark.
+
+_Exemplo:_
+
+```html
+<li class="list-group-item list-group-item-primary">Lista primary</li>
+```
+
+<h4 id="tag47">5. Badges </h4>
+
+- Muito utilizadas para e-mails para informar, por exemplo, quantos e-mails existem na caixa de entrada;
+- Aplica-se `<span>` dentro de uma `<li>` e no span é colocada a `class="badge badge-opção"`;
+- As opções são: primary, secondary, success, info, warning, danger, light e dark.
+
+_Exemplo:_
+
+```html
+<li class="list-group-item">
+  Caixa de entrada
+  <span class="badge badge-info">120</span>
+</li>
+```
+
+<h4 id="tag48">6. Breadcrumb </h4>
+
+- Class utilizada para identificar em qual página o usuário está;
+- Em uma lista ordenada (`<ol>`) é aplicada a `class="breadcrumb"` e na `<li>` é aplicada a `class="breadcrumb-item"`, podendo colocar o `active` também.
+
+_Exemplo:_
+
+```html
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="">Home</a>
+  </li>
+  <li class="breadcrumb-item active">Notícias</li>
+</ol>
+```
 
 <a href="#indice-menu">Voltar ao índice</a>
