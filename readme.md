@@ -1201,3 +1201,152 @@ _Exemplo:_
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="formularios" align="center">Formulários</h2>
+
+<h4 id="tag49">1. Caixas de texto </h4>
+
+- Aplica-se a `class="form-group` em uma `div` (utilizada para agrupar os elementos como input e label) dentro do `form` e a `class="form-control"` no `input`;
+- É possível escolher entre as opções `sm` e `lg` para aplicação no input também;
+- O atributo `readonly`deixará o campo cinza e irá impedir do usuário clicar;
+- A `class="form-text"` é utilizada para formatação padrão de textos dentro de um formulário.
+
+_Exemplo:_
+
+```html
+<form>
+  <div class="form-group">
+    <label for="usuario">Usuário</label>
+    <input
+      class="form-control form-control-sm"
+      type="text"
+      id="usuario"
+      placeholder="Digite seu usuário"
+    />
+  </div>
+</form>
+```
+
+<h4 id="tag50">2. Select e textareas </h4>
+
+- As mesmas classes podem ser aplicadas em `selects` ou `textareas`;
+
+_Exemplo com select:_
+
+```html
+<div class="form-group">
+  <label for="estados">Estados</label>
+  <select class="form-control" id="estados">
+    <option>Acre</option>
+    <option>Alagoas</option>
+    <option>Amapá</option>
+    <option>...</option>
+  </select>
+</div>
+```
+
+_Exemplo com textarea:_
+
+```html
+<div class="form-group">
+  <label for="mensagem">Mensagem</label>
+  <textarea class="form-control" id="mensagem" rows="3"></textarea>
+</div>
+```
+
+<h4 id="tag51">3. Input tipo file </h4>
+
+- Pode ser aplicada a `class="form-control-file"` para habilitar a seleção de arquivos;
+- Também existe a opção customizada: `class="custom-file"` que pode ser aplicada na div, `class="custom-file-label"` que pode ser aplicada na label, e `class="custom-file-input"` que pode ser aplicada no input.
+
+_Exemplo 1:_
+
+```html
+<div class="form-group">
+  <label for="arquivo">Arquivo</label>
+  <input class="form-control-file" type="file" id="arquivo" />
+</div>
+```
+
+<br>
+
+_Exemplo 2:_
+
+```html
+<div class="custom-file">
+  <label class="custom-file-label">Selecione arquivo</label>
+  <input class="custom-file-input" type="file" id="arquivo" />
+</div>
+```
+
+<h4 id="tag52">4. Range </h4>
+
+- Aplica-se a `class="custom-range"` no input, alterando a formatação;
+
+_Exemplo:_
+
+```html
+<div class="form-group">
+  <label id="range">Satisfação</label>
+  <input class="custom-range" type="range" id="range" min="1" max="5" />
+</div>
+```
+
+<h4 id="tag53">5. Formulários inline </h4>
+
+- Aplica-se a `class="form-inline"` no tag `<form>`;
+- Na tag `<input>´ aplica-se a `class="form-control"`, podendo ajustar a margem com `mr-2`, por exemplo, entre os inputs.
+
+_Exemplo:_
+
+```html
+<form class="form-inline">
+  <input
+    class="form-control mr-2"
+    type="text"
+    placeholder="Digite seu usuário"
+  />
+  <input
+    class="form-control mr-2"
+    type="password"
+    placeholder="Digite sua senha"
+  />
+  <input class="btn btn-primary" type="submit" value="Logar" />
+</form>
+```
+
+<h4 id="tag54">6. Validação de formulário </h4>
+
+- A validação de formulários é realizada pelo javascript, sendo as classes aplicadas a partir desta verificação;
+- Podem ser aplicadas as classes: `class= form-control is-valid"`, `class= form-control is-invalid"` no input;
+- O texto de validação poderá ser colocado em uma div, aplicando-se a `class="invalid-feedback"`ou `class= valid-feedback"`.
+
+_Exemplo:_
+
+```html
+<form>
+  <div class="form-group">
+    <label for="email-usuario">email</label>
+    <input
+      class="form-control is-valid"
+      type="text"
+      id="email-usuario"
+      placeholder="Digite seu e-mail"
+    />
+    <div class="valid-feedback">E-mail válido</div>
+  </div>
+
+  <div class="form-group">
+    <label for="senha-usuario">Senha</label>
+    <input
+      class="form-control is-invalid"
+      type="email"
+      id="senha-usuario"
+      placeholder="Digite sua senha"
+    />
+    <div class="invalid-feedback">Senha inválida</div>
+  </div>
+
+  <input class="btn btn-primary" type="submit" value="Logar" />
+</form>
+```
