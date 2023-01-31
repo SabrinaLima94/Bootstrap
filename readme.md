@@ -98,6 +98,11 @@
 
 13. <a href="#alertas">Alertas & Barra de progresso</a><br>
 
+    1. <a href="#tag57">Alerta padrão</a><br>
+    2. <a href="#tag58">Alerta com botão fechar</a><br>
+    3. <a href="#tag59">Barra de progresso</a><br>
+    4. <a href="#tag60">Barra de progresso listrada</a><br>
+
 14. <a href="#tabelas-paginacao">Tabelas e paginação</a><br>
 
 15. <a href="#cards">Cards</a><br>
@@ -1478,6 +1483,114 @@ _Exemplo para pesquisas:_
   <input class="form-control" type="text" placeholder="Pesquisar" />
   <div class="input-group-append">
     <button class="btn btn-warning" type="button">Pesquisar</button>
+  </div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="barra-nav" align="center">Alertas e barras de progresso</h2>
+
+<h4 id="tag57">1. Alerta padrão</h4>
+
+- Utilizados para enviar mensagens ao usuário;
+- A `class="alert" aplica um espaçamento interno (formatação). Quando combinada com outra classe (`class="alert alert-primary"`) será adicionado cor;
+
+  _Exemplo:_
+
+```html
+<div class="alert alert-primary">
+  <strong>Primary</strong> você tem uma postagem pendente!
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag58">2. Alerta com botão fechar</h4>
+
+- Aplicar `class="alert-dismissible"` na div;
+- Aplicar `class="close"` na tag `<button>`;
+- Adicionar o atributo `data-dismiss="alert"`
+
+_Exemplo:_
+
+```html
+<div class="alert alert-danger alert-dismissible">
+  <button class="close" type="button" data-dismiss="alert">&times;</button>
+  <strong>Fechar</strong> Alerta com botão fechar
+</div>
+```
+
+- Estes atributos podem ser utilizados em alertas que tenham mais conteúdos, como um texto, parágrafo, etc.
+
+<br>
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag59">3. Barra de progresso</h4>
+
+- Aplica-se na div externa a `class="progress"` (será aplicado o fundo cinza padrão);
+- Já na div interna é aplicada a `class="progress-bar"`, onde pode ser adicionado também `w-75` para definir a largura que indicará a %;
+
+_Exemplo:_
+
+```html
+<div class="progress">
+	<div class="progress-bar w-45"">45%</div>
+</div>
+```
+
+_Obs: Ao invés do `w-45` pode ser utilizado diretamente o `style="width: 45%`_
+
+- As cores podem ser definida com a `class="bg-cor"` na div interna;
+- Para definição de altura à barra de progresso poderá ser aplicado `style="height: 10px"`, por exemplo, no lugar do width;
+
+_Exemplo:_
+
+```html
+<div class="progress" style="height: 2px">
+  <div class="progress-bar bg-danger" style="width: 40%"></div>
+</div>
+```
+
+<h4 id="tag60">4. Barra de progresso listrada</h4>
+
+- Para aplicação de listras na barra de progresso basta utilizar a `class="progress-bar-striped"` na div interna;
+- É possível aplicar animação também com a `class="progress-bar-animated"`na div interna.
+
+_Exemplo de barra listrada:_
+
+```html
+<div class="progress">
+  <div class="progress-bar bg-warning progress-bar-striped" style="width: 70%">
+    70%
+  </div>
+</div>
+```
+
+_Exemplo de barra animada:_
+
+```html
+<div class="progress">
+  <div
+    class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
+    style="width: 70%"
+  >
+    70%
+  </div>
+</div>
+```
+
+_Exemplo de múltiplas barras:_
+
+```html
+<div class="progress">
+  <div class="progress-bar bg-success" style="width: 25%">
+    Painel principal (25%)
+  </div>
+  <div class="progress-bar bg-danger" style="width: 15%">Fotos (15%)</div>
+  <div class="progress-bar bg-warning" style="width: 35%">
+    Configurações (35%)
   </div>
 </div>
 ```
