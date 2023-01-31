@@ -105,6 +105,9 @@
 
 14. <a href="#tabelas-paginacao">Tabelas e paginação</a><br>
 
+    1. <a href="#tag61">Tabelas</a><br>
+    2. <a href="#tag62">Paginação</a><br>
+
 15. <a href="#cards">Cards</a><br>
 
 16. <a href="#jumbotron">Jumbotron & Alinhamento de imagens</a><br>
@@ -1553,6 +1556,8 @@ _Exemplo:_
 </div>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag60">4. Barra de progresso listrada</h4>
 
 - Para aplicação de listras na barra de progresso basta utilizar a `class="progress-bar-striped"` na div interna;
@@ -1594,5 +1599,133 @@ _Exemplo de múltiplas barras:_
   </div>
 </div>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="tabelas-paginacao" align="center">Tabelas e Paginação</h2>
+
+<h4 id="tag61">1. Tabelas</h4>
+
+`<thead>` - agrupa o cabeçalho da tabela; <br>
+`<tbody>` - agrupa conteúdos da tabela; <br>
+`<tfoot>` - define o rodapé da tabela. <br>
+
+- Quando diferenciamos o conteúdo do cabeçalho, isso permite definir scrolls diferentes;
+- Para aplicar formatação nas tabelas utilizamos a `class="table"`;
+- É possível definir a cor da tabela através da `class="table table-cor"` (mesmas cores que utilizamos anteriormente como primary, secondary, etc);
+- Também podemos aplicar a cor somente no cabeçalho através da `class="thead-cor"`
+
+_Exemplo 1:_
+
+```html
+<table class="table table-dark"></table>
+```
+
+_Exemplo 2:_
+
+```html
+<thead class="thead-dark"></thead>
+```
+
+- `<table class="table table-striped">` para deixar a tabela com cores alternadas; -`<table class="table table-bordered">` para inserir borda;
+- É possível combinar o `table-bordered`e o `table-striped`;
+- Podemos alterar o conteúdo com classes contextuais (table-succes, table-danger, etc);
+
+_Exemplo:_
+
+```html
+<tr class="table table-success"></tr>
+```
+
+- `class="table table-sm"` - define a configuração de tamanho menor;
+- É possível aplicar uma tabela responsiva através do `table-responsive`.
+
+_Exemplo de tabela responsiva:_
+
+```html
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      ...
+    </thead>
+  </table>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag62">2. Paginação</h4>
+
+- A paginação pode ser aplicada dentro de uma tabela;
+
+_Exemplo:_
+
+```html
+<nav>
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="">Anterior</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="">Próximo</a>
+    </li>
+  </ul>
+</nav>
+```
+
+- Também é possível realizar o alinhamento desta paginação;
+- `class="justify-content-AlinhamentoDesejado" (center ou end);
+
+_Exemplo:_
+
+```html
+<nav>
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="">Anterior</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="">Próximo</a>
+    </li>
+  </ul>
+</nav>
+```
+
+- Para formatar o tamanho utilizamos `class="pagination pagination-lg"` ou `class="pagination pagination-sm"`.
+
+```hml
+<nav>
+	<ul class="pagination pagination-lg">
+		<li class="page-item disabled">
+			<a class="page-link" href="">Anterior</a>
+		</li>
+		<li class="page-item active">
+			<a class="page-link" href="">1</a>
+		</li>
+		<li class="page-item">
+			<a class="page-link" href="">2</a>
+		</li>
+		<li class="page-item">
+			<a class="page-link" href="">Próximo</a>
+		</li>
+	</ul>
+</nav>
+```
+
+Setas - `&laquo;` e `&raquo;` (l de left e r de right);
+
+- Considerando a acessibilidade utilizamos `class="sr-only"` (screen reader only), para possibilitar que leitores de tela sejam lidos para pessoas com deficiência visual, por exemplo.
 
 <a href="#indice-menu">Voltar ao índice</a>
