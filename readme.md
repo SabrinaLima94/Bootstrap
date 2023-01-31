@@ -84,7 +84,17 @@
 
 11. <a href="#formularios">Formulários</a><br>
 
+    1. <a href="#tag49">Caixas de texto</a><br>
+    2. <a href="#tag50">Selec e textareas</a><br>
+    3. <a href="#tag51">Input tipo file</a><br>
+    4. <a href="#tag52">Range</a><br>
+    5. <a href="#tag53">Formulários inline</a><br>
+    6. <a href="#tag54">Validação de formulário</a><br>
+
 12. <a href="#input-group">Input Group</a><br>
+
+    1. <a href="#tag55">Grupo prepend</a><br>
+    2. <a href="#tag56">Grupo append</a><br>
 
 13. <a href="#alertas">Alertas & Barra de progresso</a><br>
 
@@ -1130,6 +1140,8 @@ _Exemplo:_
 </ul>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag44">2. Lista com classe flush </h4>
 
 - A diferença desta lista para a lista padrão é que ela terá apenas bordas superior e inferior, sem existir a borda lateral e arredondamento nos cantos;
@@ -1142,6 +1154,8 @@ _Exemplo:_
   <li class="list-group-item">Meu item de lista 4</li>
 </ul>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
 
 <h4 id="tag45">3. Lista com links </h4>
 
@@ -1158,6 +1172,8 @@ _Exemplo:_
 </ul>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag46">4. Listas com classes contextuais </h4>
 
 - Aplica-se a `class="list-group-item-opção`;
@@ -1168,6 +1184,8 @@ _Exemplo:_
 ```html
 <li class="list-group-item list-group-item-primary">Lista primary</li>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
 
 <h4 id="tag47">5. Badges </h4>
 
@@ -1183,6 +1201,8 @@ _Exemplo:_
   <span class="badge badge-info">120</span>
 </li>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
 
 <h4 id="tag48">6. Breadcrumb </h4>
 
@@ -1227,6 +1247,8 @@ _Exemplo:_
 </form>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag50">2. Select e textareas </h4>
 
 - As mesmas classes podem ser aplicadas em `selects` ou `textareas`;
@@ -1254,6 +1276,8 @@ _Exemplo com textarea:_
 </div>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag51">3. Input tipo file </h4>
 
 - Pode ser aplicada a `class="form-control-file"` para habilitar a seleção de arquivos;
@@ -1279,6 +1303,8 @@ _Exemplo 2:_
 </div>
 ```
 
+<a href="#indice-menu">Voltar ao índice</a>
+
 <h4 id="tag52">4. Range </h4>
 
 - Aplica-se a `class="custom-range"` no input, alterando a formatação;
@@ -1291,6 +1317,8 @@ _Exemplo:_
   <input class="custom-range" type="range" id="range" min="1" max="5" />
 </div>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
 
 <h4 id="tag53">5. Formulários inline </h4>
 
@@ -1314,6 +1342,8 @@ _Exemplo:_
   <input class="btn btn-primary" type="submit" value="Logar" />
 </form>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
 
 <h4 id="tag54">6. Validação de formulário </h4>
 
@@ -1350,3 +1380,106 @@ _Exemplo:_
   <input class="btn btn-primary" type="submit" value="Logar" />
 </form>
 ```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="input-group" align="center">Input group</h2>
+
+<h4 id="tag55">1. Grupo prepend </h4>
+
+- Utilizado quando o conteúdo é exibido antes da caixa de texto;
+- Aplica-se a `class="input-group"` na div, a `class="input-group-prepend"` na div que estiver o `<span>`.
+
+_Exemplo:_
+
+```html
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">@</span>
+  </div>
+  <input class="form-control" type="text" placeholder="e-mail" />
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag56">2. Grupo append </h4>
+
+- Quando o input vem antes do bloco de preenchimento de texto (após a div com o span) aplica-se a `class="input-group-append"`.
+
+_Exemplo:_
+
+```html
+<div class="input-group">
+  <input class="form-control" type="text" placeholder="e-mail" />
+  <div class="input-group-append">
+    <span class="input-group-text">@site.com</span>
+  </div>
+</div>
+```
+
+- Esta aplicação irá variar de acordo com a localização da caixa de preenchimento ou seleção.
+- Se ela estiver no início do bloco será utilizado o `prepend`e se estiver ao final utiliza-se o `append`.
+
+_Exemplo para URL customizada:_
+
+```html
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text"> https://site.com/usuario/ </span>
+  </div>
+  <input class="form-control" type="text" placeholder="Digite seu usuário" />
+</div>
+```
+
+_Exemplo para moedas:_
+
+```html
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+  </div>
+  <input class="form-control" type="text" placeholder="Digite um valor" />
+  <div class="input-group-append">
+    <span class="input-group-text">,00</span>
+  </div>
+</div>
+```
+
+_Exemplo para checkbox (pode ser utilizado para o `type="radio"` também):_
+
+```html
+<div class="input-group">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="radio" />
+    </div>
+  </div>
+  <input type="text" class="form-control" />
+</div>
+```
+
+_Exemplo para múltiplos inputs:_
+
+```html
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">nome/e-mail</span>
+  </div>
+  <input class="form-control" type="text" placeholder="e-mail" />
+  <input class="form-control" type="password" placeholder="senha" />
+</div>
+```
+
+_Exemplo para pesquisas:_
+
+```html
+<div class="input-group">
+  <input class="form-control" type="text" placeholder="Pesquisar" />
+  <div class="input-group-append">
+    <button class="btn btn-warning" type="button">Pesquisar</button>
+  </div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
