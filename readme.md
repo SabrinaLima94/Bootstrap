@@ -1711,22 +1711,22 @@ _Exemplo:_
 
 - Para formatar o tamanho utilizamos `class="pagination pagination-lg"` ou `class="pagination pagination-sm"`.
 
-```hml
+```html
 <nav>
-	<ul class="pagination pagination-lg">
-		<li class="page-item disabled">
-			<a class="page-link" href="">Anterior</a>
-		</li>
-		<li class="page-item active">
-			<a class="page-link" href="">1</a>
-		</li>
-		<li class="page-item">
-			<a class="page-link" href="">2</a>
-		</li>
-		<li class="page-item">
-			<a class="page-link" href="">Próximo</a>
-		</li>
-	</ul>
+  <ul class="pagination pagination-lg">
+    <li class="page-item disabled">
+      <a class="page-link" href="">Anterior</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="">Próximo</a>
+    </li>
+  </ul>
 </nav>
 ```
 
