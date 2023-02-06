@@ -118,6 +118,10 @@
     7. <a href="#tag69">Card com colunas</a><br>
 16. <a href="#jumbotron">Jumbotron & Alinhamento de imagens</a><br>
 
+    1. <a href="#tag70">Jumbotron</a><br>
+    2. <a href="#tag71">Alinhamento de imagens</a><br>
+    3. <a href="#tag72">Listas com imagens</a><br>
+
 17. <a href="#icones">Ícones</a><br>
 
 18. <a href="#grid">Grid</a><br>
@@ -1938,6 +1942,97 @@ _Exemplo:_
   </div>
   <!--final card-->
 </div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="jumbotron" align="center">Jumbotron e Alinhamento de imagens</h2>
+
+<h4 id="tag70">1. Jumbotron</h4>
+
+- Jumbotron permite definit uma área em destaque para um site;
+- Aplica-se a `class="jumbotron"` na div externa;
+
+_Exemplo:_
+
+```html
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Música para todos.</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+    <hr />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a class="btn btn-primary btn-lg" href="">Leia mais</a>
+  </div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag71">2. Alinhamento de imagens</h4>
+
+- `class="media"` na div externa + `class="media-body"` na div de conteúdo irá alinhar a imagem ao lado do título e conteúdo;
+
+```html
+<div class="media">
+  <img class="mr-3" src="https://source.unsplash.com/random/60x60" />
+
+  <div class="media-body">
+    <h5>Título do conteúdo</h5>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+  </div>
+</div>
+```
+
+- Tipos de alinhamentos: `align-self-ALINHAMENTO` (start - alinhamento ao topo, center - centraliza com o media-body, end - alinhamento no final do medi-body);
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag72">3. Listas com imagens</h4>
+
+-Aplica-se na `ul`: `class="list-unstyled"`;
+
+- Aplica-se na `li`: `class="media"`;
+- Na `img` aplicar alinhamento e espaçamento desejados;
+- Aplica-se na `div` após img: `class="media-body"`.
+
+```html
+<ul class="list-unstyled">
+  <li class="media border-bottom pb-2 pt-2">
+    <img
+      class="mr-2 align-self-center"
+      src="https://source.unsplash.com/random/60x60"
+    />
+    <div class="media-body">
+      <h5>Título do conteúdo</h5>
+      <p class="mb-o">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien
+        dui, feugiat et lorem quis, fringilla maximus nisl.
+      </p>
+    </div>
+  </li>
+  <li class="media border-bottom pb-2 pt-2">
+    <img
+      class="mr-2 align-self-center"
+      src="https://source.unsplash.com/random/60x60"
+    />
+    <div class="media-body">
+      <h5>Título do conteúdo</h5>
+      <p class="mb-o">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien
+        dui, feugiat et lorem quis, fringilla maximus nisl.
+      </p>
+    </div>
+  </li>
+</ul>
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
