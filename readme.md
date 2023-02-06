@@ -109,7 +109,13 @@
     2. <a href="#tag62">Paginação</a><br>
 
 15. <a href="#cards">Cards</a><br>
-
+    1. <a href="#tag63">Card simples</a><br>
+    2. <a href="#tag64">Card com imagens</a><br>
+    3. <a href="#tag65">Card com cabeçalho e rodapé</a><br>
+    4. <a href="#tag66">Card com navegação</a><br>
+    5. <a href="#tag67">Card com cores de fundo</a><br>
+    6. <a href="#tag68">Card com bordas</a><br>
+    7. <a href="#tag69">Card com colunas</a><br>
 16. <a href="#jumbotron">Jumbotron & Alinhamento de imagens</a><br>
 
 17. <a href="#icones">Ícones</a><br>
@@ -1727,5 +1733,211 @@ _Exemplo:_
 Setas - `&laquo;` e `&raquo;` (l de left e r de right);
 
 - Considerando a acessibilidade utilizamos `class="sr-only"` (screen reader only), para possibilitar que leitores de tela sejam lidos para pessoas com deficiência visual, por exemplo.
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="cards" align="center">Cards</h2>
+
+<h4 id="tag63">1. Card simples</h4>
+
+- `<div class="card">` - Define o card;
+- `<div class="card-body">` - Define o corpo do card;
+- `<h4 class="card-title">` - Atribui título ao card;
+- `<h6 class="card-subtitle">` - Atribui subtítulo ao card;
+- `<p class="card-text">` - Define o texto;
+
+_Exemplo:_
+
+```html
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Título do cartão</h4>
+    <h6 class="card-subtitle">Subtítulo do cartão</h6>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+    <a class="btn btn-outline-primary" href="">Leia mais</a>
+  </div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag64">2. Card com imagens</h4>
+
+- `<img class="card-img-top">` - para inserir imagem no card;
+- Através do link: https://unsplash.com/developers é possível gerar imagens de forma randômica, inclusive definindo o tamanho desejado para incluir na src da tag img;
+- A atribuição "top" ou "bottom" não define sua localização no card, mas sim as configurações de bordas e arredondamentos;
+
+_Exemplo:_
+
+```html
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Título do cartão</h4>
+    <h6 class="card-subtitle">Subtítulo do cartão</h6>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+    <a class="btn btn-outline-primary" href="">Leia mais</a>
+  </div>
+  <img
+    class="card-img-bottom"
+    src="https://source.unsplash.com/random/600x200"
+    alt=""
+  />
+</div>
+```
+
+- É possível também colocar a imagem sobreposta, bastando utilizar `<img class="card-img">` e no lugar de `<div class="card-body">`utilizar: `<div class="card-img-overlay">`
+
+_Exemplo:_
+
+```html
+<div class="card">
+  <img
+    class="card-img"
+    src="https://source.unsplash.com/random/600x250"
+    alt=""
+  />
+  <div class="card-img-overlay">
+    <h4 class="card-title">Título do cartão</h4>
+    <h6 class="card-subtitle">Subtítulo do cartão</h6>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+    <a class="btn btn-outline-light" href="">Leia mais</a>
+  </div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag65">3. Card com cabeçalho e rodapé</h4>
+
+- Para incluir cabeçalho no card é necessário colocar uma div para o cabeçalho antes da div do body no card, atribuindo: `class="card-header"`;
+- Para inserir o rodapé, basta incluir uma div com a `class="card-footer"`;
+- É possível também alinhar o conteúdo do card com a `class="text-center"`, por exemplo;
+
+_Exemplo:_
+
+```html
+<div class="card">
+  <div class="card-header text-center">Cabeçalho do cartão</div>
+  <div class="card-body">
+    <h4 class="card-title">Título do cartão</h4>
+    <h6 class="card-subtitle">Subtítulo do cartão</h6>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+    <a class="btn btn-outline-danger" href="">Leia mais</a>
+  </div>
+  <div class="card-footer">Rodapé do cartão</div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag66">4. Card com navegação</h4>
+
+- Na tag `ul` colocar a `class="nav nav-tabs card-header-tabs"` e na tag `li` incluir a `class="nav-item"`, conforme aprendemos anteriormente;
+- Na tag `a` incluir a `class="nav-link"` (podendo ser aplicado "disabled" ou "active");
+
+_Exemplo:_
+
+```html
+<div class="card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="">Link 3</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h4>Título do cartão</h4>
+    <h6>Subtítulo do cartão</h6>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,
+      feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar,
+      aliquet purus ut, dictum elit.
+    </p>
+    <a class="btn btn-outline-danger btn-block" href="">Leia mais</a>
+  </div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag67">5. Card com cores de fundo</h4>
+
+- Para aplicação de cor de fundo basta utilizar a `class="bg-cor desejada"`, conforme já estudado anteriormente, na `div` que irá definir o card;
+
+_Exemplo:_
+
+```html
+<div class="card bg-primary text-white mb-2">
+  <div class="card-header">Cabeçalho do cartão</div>
+  <div class="card-body">....</div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag68">6. Card com bordas</h4>
+
+- Para inserir bordas no card é necessário colocar a `class="border-cor desejada"` na div que define o card;
+
+_Exemplo:_
+
+```html
+<div class="card border-primary mb-2">
+  <div class="card-body">...</div>
+</div>
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag69">7. Card com colunas</h4>
+
+- Para organizar os cards em colunas basta criar uma div, onde serão inseridos todos os cards que deseja ordenar e atribuir a `class="card-columns"`.
+
+_Exemplo:_
+
+```html
+<div class="card-columns">
+  <!--início card-->
+  <div class="card">
+    <div class="card-body">...</div>
+  </div>
+  <!--final card-->
+
+  <!--início card-->
+  <div class="card">
+    <div class="card-body">...</div>
+  </div>
+  <!--final card-->
+
+  <!--início card-->
+  <div class="card">
+    <div class="card-body">...</div>
+  </div>
+  <!--final card-->
+</div>
+```
 
 <a href="#indice-menu">Voltar ao índice</a>
