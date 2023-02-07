@@ -2036,3 +2036,33 @@ _Exemplo:_
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="icones" align="center">Ícones</h2>
+
+_Na aula, são utilizados Iconic, que estava fora do ar_
+
+- Os ícones se comportam como letras: permitem alterar cores e tamanhos;
+- Fazer download das versões de cada um dos links. É possível também copiar o link e utiizá-lo, sem a necessidade de fazer download.
+
+<h4>Iconic</h4>
+
+- Pode ser utilizado como link (atributo da tag img);
+- Basta inserir no HTML:
+
+```html
+<link href="iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet" />;
+```
+
+- Deve escolher um ícone -> usar a `class="oi oi-nomeDoIcone"`;
+- Podemos alterar tamanho e cor e podem ser aplicados em span, tag i, etc.
+
+<h4>Font Awesome</h4>
+
+- Utiliza a mesma estrutura;
+  -Basta inserir no HTML:
+
+```html
+<link href="link rel="stylesheet" href="fontawesome/css/all.css">
+```
+
+<a href="#indice-menu">Voltar ao índice</a>
