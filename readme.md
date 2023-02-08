@@ -2066,3 +2066,45 @@ _Na aula, são utilizados Iconic, que estava fora do ar_
 ```
 
 <a href="#indice-menu">Voltar ao índice</a>
+
+<h2 id="grid" align="center">Sistema de Grid</h2>
+
+_O conteúdo da aula foi desenvolvido no arquivo <strong>grid.html</strong>_
+
+<br>
+
+- Com o sistema de grid é possível definir áreas que um conteúdo irá ocupar na tela;
+- É utilizado um total de 12 grids em uma determinada área, onde possibilita a criação de layouts diversos;
+
+<div align="center">
+    <img src="./img/1-grid-bootstrap.jpg" width="50%"></div>
+
+- Estas 12 colunas definem a largura máxima que podemos utilizar, sendo que existe também 12 colunas dentro da área disponível para montagem do layout;
+
+<div align="center">
+    <img src="./img/2-grid-exemplo.png" width="50%"></div>
+
+<br><br>
+
+<div align="center">
+    <img src="./img/3-grid-exemplo2.png" width="50%"></div>
+
+<br>
+
+- A documentação referente ao sistema de grid está também disponível no site <a href= "https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap - Grid System</a> para consulta;
+- Existem 5 "breakpoints" que irão definir a exibição para determinado tamanho de dispositivo;
+
+  - Extra small (<576px) - `class="col-numeroDeColunas"`
+  - Small (≥576px); - `class="col-sm-numeroDeColunas"`
+  - Medium (≥768px); - `class="col-md-numeroDeColunas"`
+  - Large (≥992px); - `class="col-lg-numeroDeColunas"`
+  - Extra large (≥1200px); -`class="col-xl-numeroDeColunas"`
+
+    <br>
+
+- Devemos criar uma div `container` e aplicar a `class="col-breakpoint-numeroDeColunas"`;
+- Utilizamos a `class="row"` para criar um flex container;
+- Por mais que seja aumentado o tamanho do container, ele permanecerá ocupando a proporção pré-determinada na class;
+- Portanto, podemos definir, por exemplo, o grid para um dispositivo medium. Todos os dispositivos maiores seguirão a mesma configuração. Já em dispositivos menores, o conteúdo ficará um abaixo do outro, como lista.
+
+<a href="#indice-menu">Voltar ao índice</a>
