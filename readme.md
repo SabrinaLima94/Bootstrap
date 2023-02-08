@@ -2077,17 +2077,17 @@ _O conteúdo da aula foi desenvolvido no arquivo <strong>grid.html</strong>_
 - É utilizado um total de 12 grids em uma determinada área, onde possibilita a criação de layouts diversos;
 
 <div align="center">
-    <img src="./img/1-grid-bootstrap.jpg" width="50%"></div>
+    <img src="./img/1-grid-bootstrap.jpg" width="80%"></div>
 
 - Estas 12 colunas definem a largura máxima que podemos utilizar, sendo que existe também 12 colunas dentro da área disponível para montagem do layout;
 
 <div align="center">
-    <img src="./img/2-grid-exemplo.png" width="50%"></div>
+    <img src="./img/2-grid-exemplo.png" width="80%"></div>
 
 <br><br>
 
 <div align="center">
-    <img src="./img/3-grid-exemplo2.png" width="50%"></div>
+    <img src="./img/3-grid-exemplo2.png" width="80%"></div>
 
 <br>
 
