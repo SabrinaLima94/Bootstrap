@@ -128,6 +128,7 @@
 
     1. <a href="#tag73">Configuração do grid</a><br>
     2. <a href="#tag74">Alinhamento no grid</a><br>
+    3. <a href="#tag75">Classes do flexbox</a><br>
 
 19. <a href="#flexbox">Flexbox</a><br>
 
@@ -2155,5 +2156,33 @@ Seguem as diversas formas de alinhamento:
 <h4>Removendo espaçamento</h4>
 
 `class="no-gutters"`
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag75">3. Classes do flexbox</h4>
+
+Podemos utilizar a flexbox sem aplicação da classe row. Neste caso, apenas utilizamos a `class="d-flex"` e dessa maneira podemos definir a direção dos itens, columas, etc.
+
+<h4>A) Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)</h4>
+
+_Exemplo:_ `class="d-flex flex-row-reverse"`
+
+<h4>B) Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h4>
+
+_Exemplo:_ `class="d-flex justify-content-around"`
+
+<h4>C) Colunas (d-flex, flex-column, flex-column-reverse)</h4>
+
+_Exemplo:_ `class="d-flex flex-column-reverse"`
+
+<h4>D) Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h4>
+
+_Exemplo:_ `class="d-flex align-items-baseline"`
+
+<h4>E) Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch</h4>
+
+- Aplicar a classe d-flex na div principal;
+
+_Exemplo:_ `class="item align-self-start"`
 
 <a href="#indice-menu">Voltar ao índice</a>
