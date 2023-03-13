@@ -125,11 +125,10 @@
 17. <a href="#icones">Ícones</a><br>
 
 18. <a href="#grid">Grid</a><br>
-
     1. <a href="#tag73">Configuração do grid</a><br>
     2. <a href="#tag74">Alinhamento no grid</a><br>
     3. <a href="#tag75">Classes do flexbox</a><br>
-
+    4. <a href="#tag76">Margin & Wrap</a><br>
 19. <a href="#flexbox">Flexbox</a><br>
 
 20. <a href="#wrap">Margin & Wrap</a><br>
@@ -2184,5 +2183,24 @@ _Exemplo:_ `class="d-flex align-items-baseline"`
 - Aplicar a classe d-flex na div principal;
 
 _Exemplo:_ `class="item align-self-start"`
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag76">4. Margin & Wrap</h4>
+
+<b>A) Margin right/left auto (mr-auto, ml-auto)</b>
+
+_Exemplo:_ `class="item ml-auto mr-auto"`
+
+<b>B) Margin bottom/top auto (mb-auto, mt-auto)</b>
+
+_Exemplo:_ `class="item mb-auto mt-auto"`
+
+<b>C) Wrap (flex-wrap, flex-nowrap)</b>
+
+_Exemplo:_ `class="caixa d-flex flex-wrap"`
+
+- Nowrap: um item ao lado do outro; caso não caiba, aparecerá a barra de rolagem (o que é o padrão);
+- Flex-wrap: quebra os itens para a próxima linha.
 
 <a href="#indice-menu">Voltar ao índice</a>
