@@ -126,6 +126,9 @@
 
 18. <a href="#grid">Grid</a><br>
 
+    1. <a href="#tag73">Configuração do grid</a><br>
+    2. <a href="#tag74">Alinhamento no grid</a><br>
+
 19. <a href="#flexbox">Flexbox</a><br>
 
 20. <a href="#wrap">Margin & Wrap</a><br>
@@ -2106,5 +2109,51 @@ _O conteúdo da aula foi desenvolvido no arquivo <strong>grid.html</strong>_
 - Utilizamos a `class="row"` para criar um flex container;
 - Por mais que seja aumentado o tamanho do container, ele permanecerá ocupando a proporção pré-determinada na class;
 - Portanto, podemos definir, por exemplo, o grid para um dispositivo medium. Todos os dispositivos maiores seguirão a mesma configuração. Já em dispositivos menores, o conteúdo ficará um abaixo do outro, como lista.
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag73">1. Configurações do grid</h4>
+
+- Existem dois tipos de container:
+
+  - Aquele que centraliza o conteúdo `class="container"`;
+  - E aquele que é fluido, ou seja, irá preencher toda a área de conteúdos `class="container-fluid"`;
+
+- A `row` ocupa todo o espaço delimitado pelo container e dentro dela utilizamos o grid com 12 colunas;
+
+- Para configurar uma <b>largura fixa</b> para todas as colunas escrevemos `class="col"`;
+- Para <b>largura automática (auto-layout)</b>, podemos utilizar a `class="col-4"`para cada div existente. O problema é que a coluna não se ajustará de acordo com o dispositivo utilizado, ou seja, as demais divs ocuparão espaço excedente;
+- A <b>largura igual empilhada</b> pode ser definida com a `class="col-sm"`, por exemplo. Ela define de acordo com o tamanho do dispositivo, empilhando as divs (responsivo até determinado tamanho);
+- Para ordenar utilizamos a `class="order-número"`, onde o número define a ordem que será apresentado o conteúdo, começando da maior (1) para menor prioridade;
+- Existe também o <b>offset</b> que são espaçamentos entre os elementos. Podemos definir pela `class="offset-tamanhoDoDispositivo-espaçamento"`;
+- E por último temos o <b>aninhamento</b>, onde é possível inserir uma row dentro de outra row. Cada row terá o grid de 12 colunas;
+
+<a href="#indice-menu">Voltar ao índice</a>
+
+<h4 id="tag74">2. Alinhamento no grid</h4>
+
+Quando criamos uma row, é criado um flex container automaticamente, onde os flex itens ficam em seu interior.
+
+Seguem as diversas formas de alinhamento:
+
+<h4>Alinhamento vertical</h4>
+
+`class="align-items-ALINHAMENTO"`, sendo as opções: _start, center, end_.
+
+<h4>Alinhamento vertical individual</h4>
+
+`class="align-self-ALINHAMENTO"`, sendo as opções: _start, center, end_.
+
+<h4>Alinhamento horizontal nas colunas</h4>
+
+`class="justify-content-ALINHAMENTO"`, sendo as opções: _start, center, end_.
+
+<h4>Distribuição</h4>
+
+`class="justify-content-ALINHAMENTO"`, sendo as opções: _around, between, end_.
+
+<h4>Removendo espaçamento</h4>
+
+`class="no-gutters"`
 
 <a href="#indice-menu">Voltar ao índice</a>
